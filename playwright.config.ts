@@ -5,7 +5,7 @@ export default defineConfig({
   fullyParallel: true,
   reporter: 'list',
   use: {
-    baseURL: 'https://yamaha.best',
+    baseURL: process.env.BASE_URL ?? 'https://yamaha.best',
     trace: 'retain-on-failure',
   },
   projects: [

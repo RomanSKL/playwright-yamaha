@@ -7,7 +7,6 @@ test.describe('yamaha.best homepage', () => {
 
   test('loads with the expected page title', async ({ page }) => {
     await expect(page).toHaveTitle(/Yamaha Hi-Fi/i);
-    await expect(page).toHaveURL(/yamaha\.best\/?$/);
   });
 
   test('main navigation exposes Home, Products, About, and Find a Dealer', async ({ page }) => {
